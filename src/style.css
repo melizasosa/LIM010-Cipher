@@ -1,1 +1,60 @@
 /* Acá van tus reglas de estilo */
+article {
+  height :100vh;
+  width:50vw;
+  background: #bcd5b0;
+  float:left;
+}
+
+aside{
+  width:50vw;
+  height:100vh;
+  background: #f1f8ff;
+  vertical-align: middle;
+  vertical-align: center;
+}
+
+
+.login-title{
+  color:#4C7184;
+  margin:0;
+
+}
+
+aside div.login-title{
+  height:100vh;
+  display: flex;
+  flex-flow: column wrap-reverse;
+  align-items: center;
+}
+
+main {
+  display:flex;
+}
+
+
+}
+
+div.inputs{
+  height:100vh;
+  display: flex;
+  flex-flow: column wrap-reverse;
+  align-items: center;
+}
+
+.hide{
+  display:none;
+}
+
+.show{
+  display: block;
+}
+
+h2{
+  display: block;
+  margin-block-start:0.83em;
+  margin-block-end:0.83em;
+  margin-inline-start:0px;
+  margin-inline-end:0px;
+
+}
