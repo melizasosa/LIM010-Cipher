@@ -2,12 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+
+      <div class="login-container">
+        <article>
+          <img  src = "Login.jpg"  height=100% width=100%/>
+        </article>
+      </div >
+
+      <aside>
+        <div class="login-title" id="login">
+          <h2> INGRESAR </h2>
+          <h3> SISTEMA DE ENCRIPTACION </h3>
+          <label class="active" for="password">
+            <p>Clave</p>
+          </label>
+          <input id="password" type="password"class="input" name="password"><br>
+            <div class="mensaje" id="sms_error" >
+            <h3 id="error">  </h3>
+            </div>
+                <h3 id="bloqueo"> </h3>
+          <!--<button  type="submit" name="button" id="ingresar" class="btn">INGRESAR</button>-->
+          <button  type="submit" name="button" onclick="clave(),limpiarClave()" class="btn">INGRESAR</button>
+        </div>
+    </aside>
+
+    </main>
     <footer></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
