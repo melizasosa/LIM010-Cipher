@@ -1,17 +1,61 @@
 /* Acá van tus reglas de estilo */
-article {
+.logo{
   height :100vh;
   width:50vw;
   background: #bcd5b0;
-  float:left;
+  display:
+}
+.logo.before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #4C7184;
+  position: absolute
+  opacity:0.9;
+
+}
+.login-container{
+  display:flex;
 }
 
-aside{
+.form-container{
+  display:flex;
+  align-items:center;
   width:50vw;
   height:100vh;
   background: #f1f8ff;
-  vertical-align: middle;
-  vertical-align: center;
+}
+
+.form-center{
+  margin-left:150px;
+}
+
+
+
+.container{
+    display:flex;
+    align-items:center;
+    width:100VW;
+    height:100vh;
+    background:#5480ab;
+
+}
+.formulario{
+margin-left:500px;
+
+}
+
+
+form{
+
+  background-color:#f5f0f0;
+  /*#eae2e2;*/
+  padding:10px;
+  width:600px;
+  margin:auto;
+  color:#999;
+  border: 8px double;
+
 }
 
 
@@ -28,12 +72,6 @@ aside div.login-title{
   align-items: center;
 }
 
-main {
-  display:flex;
-}
-
-
-}
 
 div.inputs{
   height:100vh;
@@ -49,6 +87,9 @@ div.inputs{
 .show{
   display: block;
 }
+h1{
+  text-align: center;
+}
 
 h2{
   display: block;
@@ -56,5 +97,74 @@ h2{
   margin-block-end:0.83em;
   margin-inline-start:0px;
   margin-inline-end:0px;
+}
+.parrafo1{
+  margin-top: 5px;
+}
 
+
+.inputs{
+  margin: 0 auto;
+  width: 100px;
+
+
+}
+
+.inputs2{
+
+  color: white;
+  margin: 0 auto;
+  width: 100px;
+
+}
+
+.text_ingresado{
+  border-radius: 8px;
+  width: 600px;
+}
+
+body div.texto_input{
+  placeholder:"Texto Cifrado/Descifrado";
+}
+
+/*input {
+  width: 500px;
+  padding: 25px;
+}*/
+
+.button_cifrado{
+  font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:80px;
+        height:19px;
+}
+.button{
+  font: bold 15px Verdana;
+  color:white;
+  padding:10px 20px 10px 20px;
+  background:#52a5b1;
+  border-radius:10px;
+  width: 150px;
+  height: 50px;
+}
+button:hover{
+  background:#89b1b7;
+  color:white;
+}
+.ingresar_clave{
+  color:#9E9E9E;
+  contrast:2.68;
+
+}
+
+.number{
+  width:40px;
+}
+
+h3{
+line-height: 0.5em;
 }

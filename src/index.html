@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+
     <header></header>
     <main>
 
-      <div class="login-container">
-        <article>
-          <img  src = "Login.jpg"  height=100% width=100%/>
-        </article>
-      </div >
-
-      <aside>
-        <div class="login-title" id="login">
-          <h2> INGRESAR </h2>
-          <h3> SISTEMA DE ENCRIPTACION </h3>
-          <label class="active" for="password">
-            <p>Clave</p>
-          </label>
-          <input id="password" type="password"class="input" name="password"><br>
-            <div class="mensaje" id="sms_error" >
-            <h3 id="error">  </h3>
+      <div id="primeravista" class="login-container">
+        <img  id="logo" class="logo" src = "Login.jpg"  height=100% width=100%/>
+        <div id="login" class="form-container">
+          <div  class="form-center">
+            <div class="login-title" id="login-title">
+            <h2> INGRESAR </h2>
+            <h3> SISTEMA DE ENCRIPTACION </h3>
+            <label class="ingresar_clave" for="password">
+              <p>Ingrese la clave</p>
+            </label>
             </div>
-                <h3 id="bloqueo"> </h3>
-          <button  type="submit" name="button" id="ingresar" class="btn">INGRESAR</button>
+              <input id="password" type="password"class="input" name="password"><br>
+              <div class="mensaje" id="sms_error" >
+                <h3 id="msj_error">  </h3>
+              </div>
+              <h3 id="sms_bloqueo"> </h3>
+              <button  type="button"  id="button_ingresar" class="button">INGRESAR</button>
+          </div>
         </div>
-    </aside>
+      </div>
+
+
+      <div  id="segundavista" class="hide">
+        <div class="container">
+          <div  id="cifrado" class="cifrado-container" >
+            <form class="formulario" id="formulario" >
+              <h1>SISTEMA DE ENCRIPTACION</h1>
+              <div class="parrafo1">
+              <h3>INGRESAR TEXTO</h3>
+              <textarea  type = "text" class="text_ingresado" size="80" rows="4" cols="40"  id="texto_ingresado"/></textarea>
+
+              </div>
+              <label class="desp" for="desplazamiento">
+              <p>N° de desplazamiento
+              </label>
+              <input type="number" class="number" id="number">
+              </p>
+              <div class="cifDes" id="cifrarDescifrar">
+
+                  <button  type="button_cifrar" name="button" id="button_cifrar"  class="button">CIFRAR</button>
+                  <button  type="button_descifrar" name="button" id="button_desCifrar"  class="button">DESCIFRAR</button>
+
+              </div>
+              <div class="outputs">
+                  <label class="result" for="resultado">
+                  <p>RESULTADO</p>
+                  </label>
+                  <textarea type="text" class="text_ingresado" size="80" maxlength="30" value="" name="nombre" rows="4" cols="40" id="text_out"></textarea>
+              </div>
+              <div class="clean">
+                <p>
+                <button  type="button_clean" name="button_clean" id="button_limpiar" class="button">LIMPIAR</button>
+                <button type="button_salir" name="button_salir" id="button_salir" class="button">SALIR</button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
     </main>
     <footer></footer>
