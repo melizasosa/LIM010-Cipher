@@ -1,132 +1,87 @@
 /* Acá va tu código */
-
-//Variables
-const password=document.getElementById('password');
-const sms=document.getElementById("sms_error");
-const inicio=document.getElementById("Login");
-const msj_bloqueado=document.getElementById("bloqueo");
-const msj_error=document.getElementById("error");
-//const btn_ingresar=document.getElementById("ingresar");
-const textoIngresadoCifrar=document.getElementById("texto_input");
+//VARIABLES
+const primeravista=document.getElementById("primeravista");
+const segundavista=document.getElementById("segundavista");
+const msj_error=document.getElementById("msj_error");
+const password=document.getElementById("password");
+const msj_bloqueado=document.getElementById("sms_bloqueo");
+let textoIngresado=document.getElementById("texto_ingresado");
 const numDes=document.getElementById("number");
 const textoSalidaCifrar=document.getElementById("text_out");
 
+//VARIABLES PARA EL CIFRADO
+
+//VARIABLE CONTADOR
 let cont=0;
 
 
+//VARIABLES PARA LOS BOTONES
+const btn_ingresar=document.getElementById("button_ingresar");
+const btn_salir=document.getElementById("button_salir");
+const btn_cifrar=document.getElementById("button_cifrar");
+const btn_desCifrar=document.getElementById("button_desCifrar");
+const btn_limpiar=document.getElementById("button_limpiar");
 
-//variables de los botones
-const enlace=document.getElementById("ingresar");
-const limpiar=document.getElementById('ingresar');
-const btn_salir=document.getElementById("btn_out");
-const boton_principal=document.getElementById("principal")
 
-const vistaD=document.getElementById("vistaDos");
-
-//Funcion para la validacion de la clave
-/*enlace.addEventListener ('click',()=>{
+//FUNCION PARA VALIDAR CLAVE
+btn_ingresar.addEventListener ("click",(event)=>{
+  event.preventDefault();
   const clave=password.value;
-
-  if(clave==="LABORATORIA"){
-      window.location.href="index2.html"
+  if(clave==="L"){
+    //  window.location.href="index2.html"
+      segundavista.classList.add("show");
+      primeravista.classList.add("hide");
       cont=0;
 
     }else if(cont>=2){
-     msj_bloqueado.innerHTML='Intento varias veces'
-     sms_error.classList.add("hide")
-     btn_ingresar.classList.add("hide")
-     console.log(cont);
+       msj_error.classList.add("hide");
+       btn_ingresar.classList.add("hide")
+       password.classList.add("hide")
+       msj_bloqueado.innerHTML="SUPERÓ EL LIMITE PERMITIDO"
    }
    else{
-    cont=cont+1;
-     msj_error.innerHTML='Clave incorrecta'
-    // msj_bloqueado.innerHTML='Intento varias veces'
-     //sms_error.classList.add("hide")
-    //smj_bloqueado.classList.add('show')
-    console.log(cont);
-  }
-});*/
-
-function clave(){
-  const clave=password.value;
-
-  if(clave==="LABORATORIA"){
-      window.location.href="index2.html"
-      cont=0;
-
-    }else if(cont>=2){
-     msj_bloqueado.innerHTML='Intento varias veces'
-     sms_error.classList.add("hide")
-     btn_ingresar.classList.add("hide")
-     console.log(cont);
-   }
-   else{
-    cont=cont+1;
-     msj_error.innerHTML='Clave incorrecta'
-    // msj_bloqueado.innerHTML='Intento varias veces'
-     //sms_error.classList.add("hide")
-    //smj_bloqueado.classList.add('show')
-    console.log(cont);
-  }
-}
-
-//funcion de limpiar
-/*limpiar.addEventListener('click',()=>{
-      document.getElementById("password").value="";
-      //sms_error.classList.add("hide")
-     //sms.style.display="none";
-});*/
-
-function limpiarClave(){
-  document.getElementById("password").value="";
-}
-
+       cont=cont+1;
+       msj_error.innerHTML='Clave incorrecta'
+       document.getElementById("password").value="";
+    }
+});
 
 
 //funcion SALIR
-/*btn_salir.addEventListener('click',()=>{
-  //console.log("hola");
-    alert("estamos dentro de la Funcion")
-
-    inicio.classList.add("show")
-    boton_principal.classList.add("show")
-    window.location.href="index.html"
-})*/
-
-//funcion salir sesion
-function salir1(){
-  console.log("hola");
-  window.location.href="index.html"
-}
+btn_salir.addEventListener('click',(event)=>{
+  event.preventDefault();
+    primeravista.classList.add("show");
+    segundavista.classList.add("hide");
+});
 
 //funcion limpiar texto
-function btn_clean(){
-  document.getElementById("texto_input").value="";
-}
+btn_limpiar.addEventListener('click',(event)=>{
+  event.preventDefault();
+  textoIngresado.value="";
+  numDes.value="";
+  textoSalidaCifrar.value="";
 
-//funcion cifrar
-function btn_cifrar(){
-  /*let string;
-  let text_out;
-  let textoCifrar=textoIngresadoCifrar.value;
-  let numDesplazamiento=numDes.value;
-
-
-  console.log(textoCifrar);
-  console.log(numDesplazamiento);
-  textoSalidaCifrar.value=textoCifrar;
-  console.log(textoSalidaCifrar);
-  textoCifrar.innerHTML=window.cipher.encode(offset,string);*/
-
-  //let string;
-  let textoCifrar;
+  segundavista.classList.add("show");
+  primeravista.classList.add("hide");
+});
 
 
-  let string=textoIngresadoCifrar.value;
+btn_cifrar.addEventListener("click",(event)=>{
+  event.preventDefault();
+  //Valores de los datos ingresados
+  let string=textoIngresado.value;
   let offset=numDes.value;
 
-  textoSalidaCifrar.value=string;
-  console.log(textoSalidaCifrar);
   textoSalidaCifrar.value=window.cipher.encode(offset,string);
 
-}
+});
+
+//FUNCION PARA DESCIFRAR
+btn_desCifrar.addEventListener('click',(event)=>{
+  event.preventDefault();
+  //Valores de los datos ingresados
+  let string=textoIngresado.value;
+  let offset=numDes.value;
+  textoSalidaCifrar.value=window.cipher.decode(offset,string);
+
+})
