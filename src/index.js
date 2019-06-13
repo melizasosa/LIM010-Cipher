@@ -86,4 +86,22 @@ btn_desCifrar.addEventListener('click',(event)=>{
   let offset=numDes.value;
   textoSalidaCifrar.value=window.cipher.decode(offset,string);
 
-})
+
+  console.log(textoCifrar);
+  console.log(numDesplazamiento);
+  textoSalidaCifrar.value=textoCifrar;
+  console.log(textoSalidaCifrar);
+  textoCifrar.innerHTML=window.cipher.encode(offset,string);*/
+
+  //let string;
+  let textoCifrar;
+
+
+  let string=textoIngresadoCifrar.value;
+  let offset=numDes.value;
+
+  textoSalidaCifrar.value=string;
+  console.log(textoSalidaCifrar);
+  textoSalidaCifrar.value=window.cipher.encode(offset,string);
+
+}

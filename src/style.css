@@ -168,3 +168,55 @@ button:hover{
 h3{
 line-height: 0.5em;
 }
+
+
+.inputs{
+  margin: 0 auto;
+  width: 100px;
+
+
+}
+
+.inputs2{
+
+  color: white;
+  margin: 0 auto;
+  width: 100px;
+
+}
+
+body{
+  background-color: teal;
+}
+body div.inputs2{
+  height:100vh;
+  display: flex;
+  flex-flow: column wrap-reverse;
+
+}
+
+.text_ingresado{
+  placeholder:"Texto Cifrado/Descifrado";
+  border-radius: 8px;
+  border:2px solid:#aaa;
+}
+
+body div.texto_input{
+  placeholder:"Texto Cifrado/Descifrado";
+}
+
+/*input {
+  width: 500px;
+  padding: 25px;
+}*/
+
+.btn_cifrar{
+  font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:80px;
+        height:19px;
+}
