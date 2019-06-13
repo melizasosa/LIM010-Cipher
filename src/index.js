@@ -9,7 +9,7 @@ let textoIngresado=document.getElementById("texto_ingresado");
 const numDes=document.getElementById("number");
 const textoSalidaCifrar=document.getElementById("text_out");
 
-//VARIABLES PARA EL CIFRADO
+
 
 //VARIABLE CONTADOR
 let cont=0;
@@ -28,7 +28,7 @@ btn_ingresar.addEventListener ("click",(event)=>{
   event.preventDefault();
   const clave=password.value;
   console.log(clave);
-  if(clave==="L"){
+  if(clave==="LABORATORIA"){
     //  window.location.href="index2.html"
       segundavista.classList.add("show");
       primeravista.classList.add("hide");
@@ -39,7 +39,7 @@ btn_ingresar.addEventListener ("click",(event)=>{
        btn_ingresar.classList.add("hide")
        password.classList.add("hide")
        msj_bloqueado.innerHTML="SUPERÓ EL LIMITE PERMITIDO"
-       console.log(cont);
+
    }
    else{
        cont=cont+1;
@@ -86,22 +86,4 @@ btn_desCifrar.addEventListener('click',(event)=>{
   let offset=numDes.value;
   textoSalidaCifrar.value=window.cipher.decode(offset,string);
 
-
-  console.log(textoCifrar);
-  console.log(numDesplazamiento);
-  textoSalidaCifrar.value=textoCifrar;
-  console.log(textoSalidaCifrar);
-  textoCifrar.innerHTML=window.cipher.encode(offset,string);*/
-
-  //let string;
-  let textoCifrar;
-
-
-  let string=textoIngresadoCifrar.value;
-  let offset=numDes.value;
-
-  textoSalidaCifrar.value=string;
-  console.log(textoSalidaCifrar);
-  textoSalidaCifrar.value=window.cipher.encode(offset,string);
-
-}
+});
