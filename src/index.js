@@ -1,16 +1,20 @@
 /* Acá va tu código */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+//VARIABLES
+const primeravista=document.getElementById("primeravista");
+const segundavista=document.getElementById("segundavista");
+const msj_error=document.getElementById("msj_error");
+const password=document.getElementById("password");
+const msj_bloqueado=document.getElementById("sms_bloqueo");
+let textoIngresado=document.getElementById("texto_ingresado");
+const numDes=document.getElementById("number");
+const textoSalidaCifrar=document.getElementById("text_out");
+>>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 
-//Variables
-const password=document.getElementById('password');
-const sms=document.getElementById("sms_error");
-const inicio=document.getElementById("Login");
-const msj_bloqueado=document.getElementById("bloqueo");
-const msj_error=document.getElementById("error");
-//const btn_ingresar=document.getElementById("ingresar");
-const textoIngresadoCifrar=document.getElementById("texto_input");
-const numDes=document.getElementById("numdDesplazar");
 
+<<<<<<< HEAD
 =======
 //VARIABLES
 const primeravista=document.getElementById("primeravista");
@@ -30,27 +34,39 @@ const textoClave=document.getElementById("texto_clave");
 //VARIABLE CONTADOR
 >>>>>>> 7d1b4ee... -nuevos cambios
 let cont=0;
+=======
+>>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
+
+//VARIABLE CONTADOR
+let cont=0;
 
 
+//VARIABLES PARA LOS BOTONES
+const btn_ingresar=document.getElementById("button_ingresar");
+const btn_salir=document.getElementById("button_salir");
+const btn_cifrar=document.getElementById("button_cifrar");
+const btn_desCifrar=document.getElementById("button_desCifrar");
+const btn_limpiar=document.getElementById("button_limpiar");
 
-//variables de los botones
-const enlace=document.getElementById("ingresar");
-const limpiar=document.getElementById('ingresar');
-const btn_salir=document.getElementById("btn_out");
-const boton_principal=document.getElementById("principal")
 
-const vistaD=document.getElementById("vistaDos");
-
-//Funcion para la validacion de la clave
-enlace.addEventListener ('click',()=>{
+//FUNCION PARA VALIDAR CLAVE
+btn_ingresar.addEventListener ("click",(event)=>{
+  event.preventDefault();
   const clave=password.value;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  console.log(clave);
+>>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
   if(clave==="LABORATORIA"){
-      window.location.href="index2.html"
+    //  window.location.href="index2.html"
+      segundavista.classList.add("show");
+      primeravista.classList.add("hide");
       cont=0;
 
     }else if(cont>=2){
+<<<<<<< HEAD
      msj_bloqueado.innerHTML='Intento varias veces'
      sms_error.classList.add("hide")
      btn_ingresar.classList.add("hide")
@@ -69,17 +85,22 @@ enlace.addEventListener ('click',()=>{
        textoClave.classList.add("hide")
        msj_bloqueado.innerHTML=":( LO SENTIMOS,NO SE PUEDO INICIAR SESIÓN"
 >>>>>>> 7d1b4ee... -nuevos cambios
+=======
+       msj_error.classList.add("hide");
+       btn_ingresar.classList.add("hide")
+       password.classList.add("hide")
+       msj_bloqueado.innerHTML="SUPERÓ EL LIMITE PERMITIDO"
+
+>>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
    }
    else{
-    cont=cont+1;
-     msj_error.innerHTML='Clave incorrecta'
-    // msj_bloqueado.innerHTML='Intento varias veces'
-     //sms_error.classList.add("hide")
-    //smj_bloqueado.classList.add('show')
-    console.log(cont);
-  }
+       cont=cont+1;
+       msj_error.innerHTML='Clave incorrecta'
+       document.getElementById("password").value="";
+    }
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //funcion de limpiar
 limpiar.addEventListener('click',()=>{
@@ -98,35 +119,44 @@ btn_salir.addEventListener('click',(event)=>{
   login-container.classList.add("show");
 >>>>>>> 7d1b4ee... -nuevos cambios
 });
+=======
+>>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 
 //funcion SALIR
-/*btn_salir.addEventListener('click',()=>{
-  //console.log("hola");
-    alert("estamos dentro de la Funcion")
-
-    inicio.classList.add("show")
-    boton_principal.classList.add("show")
-    window.location.href="index.html"
-})*/
-
-//funcion salir sesion
-function salir1(){
-  console.log("hola");
-  window.location.href="index.html"
-}
+btn_salir.addEventListener('click',(event)=>{
+  event.preventDefault();
+    primeravista.classList.add("show");
+    segundavista.classList.add("hide");
+});
 
 //funcion limpiar texto
-function btn_clean(){
-  document.getElementById("texto_input").value="";
-}
+btn_limpiar.addEventListener('click',(event)=>{
+  event.preventDefault();
+  textoIngresado.value="";
+  numDes.value="";
+  textoSalidaCifrar.value="";
 
-//funcion cifrar
-function btn_cifrar(){
-  let textoCifrar=textoIngresadoCifrar.value;
-  let numDesplazamiento=numDes.value;
-  document.getElementById("text_out").innerHTML=window.cipher.encode(text_out,string);
-}
+  segundavista.classList.add("show");
+  primeravista.classList.add("hide");
+});
 
-btn_cifrar.addEventListener('click',()=>{
 
-})
+btn_cifrar.addEventListener("click",(event)=>{
+  event.preventDefault();
+  //Valores de los datos ingresados
+  let string=textoIngresado.value;
+  let offset=numDes.value;
+
+  textoSalidaCifrar.value=window.cipher.encode(offset,string);
+
+});
+
+//FUNCION PARA DESCIFRAR
+btn_desCifrar.addEventListener('click',(event)=>{
+  event.preventDefault();
+  //Valores de los datos ingresados
+  let string=textoIngresado.value;
+  let offset=numDes.value;
+  textoSalidaCifrar.value=window.cipher.decode(offset,string);
+
+});
