@@ -8,6 +8,9 @@ const msj_bloqueado=document.getElementById("sms_bloqueo");
 let textoIngresado=document.getElementById("texto_ingresado");
 const numDes=document.getElementById("number");
 const textoSalidaCifrar=document.getElementById("text_out");
+const cifrado=document.getElementById("cifrado");
+const segvista=document.getElementById("segvista");
+const textoClave=document.getElementById("texto_clave");
 
 //VARIABLES PARA EL CIFRADO
 
@@ -27,7 +30,7 @@ const btn_limpiar=document.getElementById("button_limpiar");
 btn_ingresar.addEventListener ("click",(event)=>{
   event.preventDefault();
   const clave=password.value;
-  if(clave==="L"){
+  if(clave==="LABORATORIA"){
     //  window.location.href="index2.html"
       segundavista.classList.add("show");
       primeravista.classList.add("hide");
@@ -37,7 +40,8 @@ btn_ingresar.addEventListener ("click",(event)=>{
        msj_error.classList.add("hide");
        btn_ingresar.classList.add("hide")
        password.classList.add("hide")
-       msj_bloqueado.innerHTML="SUPERÓ EL LIMITE PERMITIDO"
+       textoClave.classList.add("hide")
+       msj_bloqueado.innerHTML=":( LO SENTIMOS,NO SE PUEDO INICIAR SESIÓN"
    }
    else{
        cont=cont+1;
@@ -50,8 +54,11 @@ btn_ingresar.addEventListener ("click",(event)=>{
 //funcion SALIR
 btn_salir.addEventListener('click',(event)=>{
   event.preventDefault();
-    primeravista.classList.add("show");
-    segundavista.classList.add("hide");
+  cifrado.classList.add("hide");
+  segvista.classList.add("hide");
+  segundavista.classList.add("hide");
+  primeravista.classList.add("show");
+  login-container.classList.add("show");
 });
 
 //funcion limpiar texto
