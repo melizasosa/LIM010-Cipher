@@ -23,25 +23,14 @@
   align-items:center;
   width:50vw;
   height:100vh;
-<<<<<<< HEAD
-  background: #f1f8ff;
-<<<<<<< HEAD
-  vertical-align: middle;
-  vertical-align: center;
-=======
   background:#ddebf9;
   /*#f1f8ff;*/
-=======
->>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 }
 
 .form-center{
   margin-left:150px;
-<<<<<<< HEAD
   width: 600px;
   height: :400px;
-=======
->>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 }
 
 
@@ -70,10 +59,6 @@ form{
   color:#999;
   border: 8px double;
 
-<<<<<<< HEAD
->>>>>>> 7d1b4ee... -nuevos cambios
-=======
->>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 }
 
 
@@ -114,10 +99,6 @@ h2{
   margin-block-end:0.83em;
   margin-inline-start:0px;
   margin-inline-end:0px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
   color:#4C71B4;
   margin:0;
   font-size: 40px;
@@ -266,121 +247,6 @@ body div.texto_input{
   padding: 25px;
 }*/
 
-=======
-}
-.parrafo1{
-  margin-top: 5px;
-}
-
-
-.inputs{
-  margin: 0 auto;
-  width: 100px;
-
-
-}
-
-.inputs2{
-
-  color: white;
-  margin: 0 auto;
-  width: 100px;
-
-}
-
-.text_ingresado{
-  border-radius: 8px;
-  width: 600px;
-}
-
-body div.texto_input{
-  placeholder:"Texto Cifrado/Descifrado";
-}
-
-/*input {
-  width: 500px;
-  padding: 25px;
-}*/
-
-.button_cifrado{
-  font-size:10px;
-        font-family:Verdana,Helvetica;
-        font-weight:bold;
-        color:white;
-        background:#638cb5;
-        border:0px;
-        width:80px;
-        height:19px;
-}
-.button{
-  font: bold 15px Verdana;
-  color:white;
-  padding:10px 20px 10px 20px;
-  background:#52a5b1;
-  border-radius:10px;
-  width: 150px;
-  height: 50px;
-}
-button:hover{
-  background:#89b1b7;
-  color:white;
-}
-.ingresar_clave{
-  color:#9E9E9E;
-  contrast:2.68;
-
-}
-
-.number{
-  width:40px;
-}
-
-h3{
-line-height: 0.5em;
-}
-
-
-.inputs{
-  margin: 0 auto;
-  width: 100px;
-
-
-}
-
-.inputs2{
-
-  color: white;
-  margin: 0 auto;
-  width: 100px;
-
-}
-
-body{
-  background-color: teal;
-}
-body div.inputs2{
-  height:100vh;
-  display: flex;
-  flex-flow: column wrap-reverse;
-
-}
-
-.text_ingresado{
-  placeholder:"Texto Cifrado/Descifrado";
-  border-radius: 8px;
-  border:2px solid:#aaa;
-}
-
-body div.texto_input{
-  placeholder:"Texto Cifrado/Descifrado";
-}
-
-/*input {
-  width: 500px;
-  padding: 25px;
-}*/
-
->>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 .btn_cifrar{
   font-size:10px;
         font-family:Verdana,Helvetica;
@@ -390,13 +256,9 @@ body div.texto_input{
         border:0px;
         width:80px;
         height:19px;
-<<<<<<< HEAD
 }
 #sms_bloqueo{
   color:#09344a;
   font-size: 20px;
   box-sizing: border-box;
->>>>>>> 7d1b4ee... -nuevos cambios
-=======
->>>>>>> 2c0bcabb513751fc0e95a4107e2595c77c0029ba
 }
