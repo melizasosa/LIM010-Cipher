@@ -1,4 +1,3 @@
-/* Acá va tu código */
 //VARIABLES
 const primeravista=document.getElementById("primeravista");
 const segundavista=document.getElementById("segundavista");
@@ -52,7 +51,6 @@ btn_ingresar.addEventListener ("click",(event)=>{
 
 
 //funcion SALIR
-<<<<<<< HEAD
 btn_salir.addEventListener('click',()=>{
 
   cifrado.classList.add("hide");
@@ -60,18 +58,8 @@ btn_salir.addEventListener('click',()=>{
   segundavista.classList.add("hide");
   primeravista.classList.add("show-flex");
   document.getElementById("password").value="";
-
-  //login-container.classList.add("show");
-=======
-btn_salir.addEventListener('click',(event)=>{
-  event.preventDefault();
-  cifrado.classList.add("hide");
-  segvista.classList.add("hide");
-  segundavista.classList.add("hide");
-  primeravista.classList.add("show");
-  login-container.classList.add("show");
->>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 });
+  //login-container.classList.add("show");
 
 //funcion limpiar texto
 btn_limpiar.addEventListener('click',()=>{
@@ -102,4 +90,4 @@ btn_desCifrar.addEventListener('click',()=>{
   let offset=numDes.value;
   textoSalidaCifrar.value=window.cipher.decode(offset,string);
 
-})
+});

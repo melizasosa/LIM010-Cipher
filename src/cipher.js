@@ -1,6 +1,16 @@
 
 window.cipher = {
 
+
+  encode: (offset, string) => {
+    /* Acá va tu código que cifra*/
+       let string=textoIngresadoCifrar.value;
+       console.log("hola");
+
+         },
+
+window.cipher = {
+
   encode: (offset, string) => {
     /* Acá va tu código que cifra*/
        let textoSalidaCifrar='';
@@ -26,6 +36,7 @@ window.cipher = {
                             }
                             return textoSalidaCifrar;
          },
+
 
   decode: (offset, string) => {
     /* Acá va tu código que descifra*/
