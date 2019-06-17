@@ -123,6 +123,7 @@ h2{
   margin:0;
   font-size: 40px;
   font-weight: 900;
+<<<<<<< HEAD
 }
 
 h3{
@@ -130,6 +131,15 @@ h3{
   margin-top: 30px;
 
 }
+=======
+}
+
+h3{
+  margin-bottom: 5px;
+  margin-top: 30px;
+
+}
+>>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 h5{
   margin-top: 20px;
   margin-left: 50px;
@@ -228,12 +238,16 @@ button:hover{
 }
 
 .desp{
+<<<<<<< HEAD
   margin-bottom: 20px;
 
 }
 .outputs{
   margin-bottom: 20px;
   margin-top: 20px;
+=======
+  margin-bottom: 30px;
+>>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 }
 
 .ingresar_clave{
@@ -256,6 +270,7 @@ h4{
   margin-top: 40px;
 }
 
+<<<<<<< HEAD
 label{
   margin-bottom: 5px;
   font-size: 20px;
@@ -263,6 +278,8 @@ label{
   font-weight: bold;
 
 }
+=======
+>>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 
 .text_ingresado{
   placeholder:"Texto Cifrado/Descifrado";
@@ -274,6 +291,14 @@ body div.texto_input{
   placeholder:"Texto Cifrado/Descifrado";
 }
 
+<<<<<<< HEAD
+=======
+/*input {
+  width: 500px;
+  padding: 25px;
+}*/
+
+>>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 .btn_cifrar{
   font-size:10px;
         font-family:Verdana,Helvetica;
@@ -288,8 +313,11 @@ body div.texto_input{
   color:#09344a;
   font-size: 20px;
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body{
   margin:0;
+=======
+>>>>>>> 7d1b4ee5e92f57313ba238164262eb96b0d3dc69
 }
