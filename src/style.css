@@ -1,7 +1,5 @@
 /* Acá van tus reglas de estilo */
 .logo{
-/*  height :100vh;
-  width:50vw;*/
   background: #bcd5b0;
   width: 500px;
 }
@@ -48,8 +46,6 @@
   height: :400px;
 }
 
-
-
 .container{
     display:flex;
     align-items:center;
@@ -63,7 +59,6 @@ margin-left:500px;
 
 }
 
-
 form{
 
   background-color:white;/*#f5f0f0;*/
@@ -75,7 +70,6 @@ form{
   border: 8px double;
 
 }
-
 
 .login-title{
   color:#4C7184;
@@ -176,21 +170,17 @@ body div.texto_input{
   placeholder:"Texto Cifrado/Descifrado";
 }
 
-/*input {
-  width: 500px;
-  padding: 25px;
-}*/
-
 .button_cifrado{
   font-size:10px;
-        font-family:Verdana,Helvetica;
-        font-weight:bold;
-        color:white;
-        background:#638cb5;
-        border:0px;
-        width:80px;
-        height:19px;
+  font-family:Verdana,Helvetica;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:80px;
+  height:19px;
 }
+
 .button{
   font: bold 15px Verdana;
   color:white;
@@ -200,10 +190,12 @@ body div.texto_input{
   width: 150px;
   height: 50px;
 }
+
 button:hover{
   background:#89b1b7;
   color:white;
 }
+
 .button_limpiar{
   margin-left: 70px;
   font: bold 15px Verdana;
@@ -276,14 +268,15 @@ body div.texto_input{
 
 .btn_cifrar{
   font-size:10px;
-        font-family:Verdana,Helvetica;
-        font-weight:bold;
-        color:white;
-        background:#638cb5;
-        border:0px;
-        width:80px;
-        height:19px;
+  font-family:Verdana,Helvetica;
+  font-weight:bold;
+  color:white;
+  background:#638cb5;
+  border:0px;
+  width:80px;
+  height:19px;
 }
+
 #sms_bloqueo{
   color:#09344a;
   font-size: 20px;
