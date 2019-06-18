@@ -1,4 +1,3 @@
-/* Acá va tu código */
 //VARIABLES
 const primeravista=document.getElementById("primeravista");
 const segundavista=document.getElementById("segundavista");
@@ -59,8 +58,6 @@ btn_salir.addEventListener('click',()=>{
   segundavista.classList.add("hide");
   primeravista.classList.add("show-flex");
   document.getElementById("password").value="";
-
-  //login-container.classList.add("show");
 });
 
 //funcion limpiar texto
@@ -92,4 +89,4 @@ btn_desCifrar.addEventListener('click',()=>{
   let offset=numDes.value;
   textoSalidaCifrar.value=window.cipher.decode(offset,string);
 
-})
+});
