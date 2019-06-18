@@ -16,7 +16,7 @@ El producto está dirigido para los comandantes y jefes de operativos policiales
 
 Dicho sistema servira para operativos policiales  protegiendo información confidencial mediante el uso del algoritmo  cifrado César.  
 
-Actualmente los centros policiales tienen un sistema estadounidense de encriptación pero las zonas de emergencia como el VRAE debido al alto costo  y no es accesible para todo los centros policiales del Perú.
+Actualmente los centros policiales tienen un sistema estadounidense de encriptación pero las zonas de emergencia como el VRAE debido al alto costo  y no es accesible para todo los centros policiales del Perú..
 
 ### Primer Prototipo en lapiz y papel
 ![Prototipo inicial vista 1](https://github.com/melizasosa/LIM010-Cipher/blob/master/src/img/PrototipoInicial_vista1.jpg "Prototipo inicial vista 1")
