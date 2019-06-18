@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
     <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-
     <header></header>
     <main>
-
-      <div id="primeravista" class="login-container">
-        <img  id="logo" class="logo" src = "Login.jpg"  height="100%" width="100%"/>
+      <section id="primeravista" class="login-container">
+        <div class="logo-login">
+          <img  id="logo" src = "Login.jpg"/>
+        </div>
         <div id="login" class="form-container">
           <div  class="form-center">
             <div class="login-title" id="login-title">
-            <h2> INGRESAR </h2>
-            <h3> SISTEMA DE ENCRIPTACION </h3>
-            <label class="ingresar_clave" for="password">
-              <p>Ingrese la clave</p>
-            </label>
+              <h2> INGRESAR </h2>
+              <h3> SISTEMA DE ENCRIPTACION</h3>
+              <h3> POLICIAL</h3>
+              <div id="texto_clave">
+                <h4>Ingrese la clave</h4>
+              </div>
             </div>
-              <input id="password" type="text" class="input" name="password"/>
+              <input id="password" type="password" class="input" name="password"/>
               <div class="mensaje" id="sms_error" >
                 <h3 id="msj_error">  </h3>
               </div>
@@ -31,47 +30,39 @@
               <button  type="button"  id="button_ingresar" class="button">INGRESAR</button>
           </div>
         </div>
-      </div>
+      </section>
 
-
-      <div  id="segundavista" class="hide">
-        <div class="container">
+      <section  id="segundavista" class="hide">
+        <div class="container" id="segvista">
           <div  id="cifrado" class="cifrado-container" >
             <form class="formulario" id="formulario" >
               <h1>SISTEMA DE ENCRIPTACION</h1>
               <div class="parrafo1">
-              <h3>INGRESAR TEXTO</h3>
-              <textarea  type = "text" class="text_ingresado" size="80" rows="4" cols="40"  id="texto_ingresado"></textarea>
-
+                <label>Ingrese Texto</label>
+                <textarea  type = "text" class="text_ingresado" size="80" rows="4" cols="40"  id="texto_ingresado"></textarea>
               </div>
-              <label class="desp" for="desplazamiento">
-              <p>N° de desplazamiento</p>
+              <div class="desp">
+                <label>N° de Desplazamiento
+                <input type="number" class="number" id="number">
               </label>
-              <input type="number" class="number" id="number">
-
+              </div>
               <div class="cifDes" id="cifrarDescifrar">
-
-                  <button  type="button_cifrar" name="button" id="button_cifrar"  class="button">CIFRAR</button>
-                  <button  type="button_descifrar" name="button" id="button_desCifrar"  class="button">DESCIFRAR</button>
-
+                <button  type="button" name="button_clean" id="button_limpiar" class="button_limpiar">LIMPIAR</button>
+                <button  type="button" name="button" id="button_cifrar"  class="button">CIFRAR</button>
+                <button  type="button" name="button" id="button_desCifrar"  class="button">DESCIFRAR</button>
               </div>
               <div class="outputs">
-                  <label class="result" for="resultado">
-                  <p>RESULTADO</p>
-                  </label>
-                  <textarea type="text" class="text_ingresado" size="80" maxlength="30" value="" name="nombre" rows="4" cols="40" id="text_out"></textarea>
+                <label>Resultado</label>
+                <textarea disabled type="text" class="text_ingresado" size="80" maxlength="30" value="" name="nombre" rows="4" cols="40" id="text_out"></textarea>
               </div>
               <div class="clean">
-                <p>
-                <button  type="button_clean" name="button_clean" id="button_limpiar" class="button">LIMPIAR</button>
-                <button type="button_salir" name="button_salir" id="button_salir" class="button">SALIR</button>
-                </p>
+                <button type="button" name="button_salir" id="button_salir" class="button_salir">SALIR</button>
+                <h5>Copyright © 2019 - 2029 Policial Nacional del Peru. Todos los derechos reservados.</h5>
               </div>
             </form>
           </div>
         </div>
-      </div>
-
+      </section>
     </main>
     <footer></footer>
     <script src="cipher.js"></script>
