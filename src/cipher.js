@@ -7,13 +7,9 @@ window.cipher = {
     let textChar;
 
     for (let i = 0; i < string.length; i++) {
-      console.log(string+"String");
       let character = string[i];
-      console.log(character+"CARACTER");
-      console.log(string+"2STRING");
       //condicion para letras mayusculas
       if (character.match(/[a-z]/i)) {
-        console.log(character);
         if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
           textChar = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
           textoSalidaCifrar += String.fromCharCode(textChar);
